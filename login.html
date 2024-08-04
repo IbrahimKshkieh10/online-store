@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="common.css">
+    <title>Login</title>
+    <style>
+
+    </style>
+    <script>
+        function redirectToPage() {
+            window.location.href = "welcome.html";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Logo" class="logo">
+        <img src="assets/Rectangle 16.png" alt="" class="image" id="login-image" style="top: 20%; left: 60%;">
+    </header>
+    <main class="container" id="login-container" style="left: 40%; top: 10%;">
+        <h1>LOGIN</h1>
+        <form action="/submit_form" method="post">
+            <div class="input-container">
+                <input type="email" id="email" name="email" placeholder=" " required>
+                <label for="email">Email</label>
+                <hr>
+            </div>
+            <div class="input-container">
+                <input type="text" id="phone" name="phone" placeholder=" " required>
+                <label for="phone">Phone Number</label>
+                <hr>
+            </div>
+            <div class="input-container">
+                <input type="password" id="password" name="password" placeholder=" " required>
+                <label for="password">Password</label>
+                <hr>
+            
+            </div>
+            <div class="input-container" style="width: 26.9vw; max-width: 100%; top: 2.5vh;">
+                <button type="submit" class="button" onclick="redirectToPage()">Login</button>
+            </div>
+        </form>
+        <div class="forgot-password">
+            <span class="forget-password">Forgot Password</span>
+        </div>
+        <div class="account-link-container" style="left: 32%; top: 20%;">
+            <span class="account-text">Don't have an account? <a href="signup.html" class="signup-link" id="signup-link">Sign Up</a></span>
+        </div>
+    </main>
+    <div class="transition-overlay"></div>
+    <script src="transition.js"></script>
+</body>
+</html>
