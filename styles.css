@@ -263,6 +263,15 @@ button:hover {
     bottom: 13%;
 }
 
+
+.file-input {
+
+    opacity: 0; 
+}
+
+
+
+
 @media (max-width: 1024px) {
     .image {
         top: 10%;
